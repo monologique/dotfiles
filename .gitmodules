@@ -1,0 +1,6 @@
+[submodule "dune-completion"]
+	path = .config/zsh/plugins/dune-completion
+	url = https://github.com/gridbugs/dune-completion-scripts.git
+[submodule "zsh-history-substring-search"]
+	path = .config/zsh/plugins/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git

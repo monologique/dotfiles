@@ -1,0 +1,5 @@
+# theme = "modus_vivendi"
+theme = "modus_operandi"
+
+[editor]
+line-number = "relative"

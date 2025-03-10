@@ -1,0 +1,5 @@
+inherits = "modus_operandi"
+
+"ui.linenr" = { bg = "bg-main", fg = "fg-dim" }
+"ui.linenr.selected" = { bg = "bg-main", fg = "fg" }
+"ui.gutter" = { bg = "bg-main" }

@@ -1,0 +1,7 @@
+--target=~/
+--no-folding
+--ignore=.stowrc
+--ignore=.gitmodules
+--ignore=.DS_Store
+--ignore=assets
+--ignore=LICENCE
