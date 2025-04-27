@@ -1,14 +1,4 @@
-# ─── Homebrew ────────────────────────────────────────────────────────────────
-
-if [ -x /opt/homebrew/bin/brew ]; then
-  export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/homebrew/Brewfile"
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
-autoload -Uz compinit
-compinit
-
-# ─── ZSH niceties ────────────────────────────────────────────────────────────────
+# ─── ZSH  ────────────────────────────────────────────────────────────────
 if [ -r "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
   source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
   bindkey '^[[A' history-substring-search-up
@@ -18,6 +8,9 @@ fi
 if [ -x "$(which fzf)" ]; then
   source <(fzf --zsh)
 fi
+
+autoload -Uz compinit
+compinit
 
 # ─── Tmux ────────────────────────────────────────────────────────────────────
 

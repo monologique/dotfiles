@@ -1,3 +1,10 @@
+# ─── Homebrew ────────────────────────────────────────────────────────────────
+
+if [ -x /opt/homebrew/bin/brew ]; then
+  export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/homebrew/Brewfile"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # ─── General ───────────────────────────────────────────────────────────────-
 
 export XDG_CONFIG_HOME="$HOME/.config"
