@@ -8,6 +8,12 @@ fi
 autoload -Uz compinit
 compinit
 
+# ─── ZSH niceties ────────────────────────────────────────────────────────────────
+
+if [ -x "$(which fzf)" ]; then
+  source <(fzf --zsh)
+fi
+
 # ─── Tmux ────────────────────────────────────────────────────────────────────
 
 if [ ! -e "$HOME/.tmux/plugins/tpm" ]; then
