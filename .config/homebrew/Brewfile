@@ -19,6 +19,7 @@ brew "starship"
 brew "taplo"
 brew "tmux"
 brew "yt-dlp"
+brew "zsh-history-substring-search"
 
 cask "affinity-designer"
 cask "affinity-photo"

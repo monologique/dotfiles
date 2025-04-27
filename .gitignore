@@ -29,3 +29,4 @@ Repositories/
 .config/zsh/.zcompcache
 .config/zsh/.zcompdump
 .Trash
+.config/zsh/.zsh_history

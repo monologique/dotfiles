@@ -9,6 +9,11 @@ autoload -Uz compinit
 compinit
 
 # ─── ZSH niceties ────────────────────────────────────────────────────────────────
+if [ -r "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
+  source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+fi
 
 if [ -x "$(which fzf)" ]; then
   source <(fzf --zsh)
