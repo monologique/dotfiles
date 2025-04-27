@@ -18,6 +18,7 @@ brew "rage"
 brew "ripgrep"
 brew "starship"
 brew "taplo"
+brew "tmux"
 brew "yt-dlp"
 
 cask "affinity-designer"

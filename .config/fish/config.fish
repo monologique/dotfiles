@@ -17,7 +17,6 @@ if test -r /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
         set -p fish_complete_path $NIX_PROFILE_HOME/share/fish/completions/
     end
 end
-    
 
 # [ HOMEBREW ]
 
@@ -36,6 +35,11 @@ if test -x /opt/homebrew/bin/brew
     if test -d (brew --prefix)/share/fish/vendor_functions.d
         set -U fish_function_path $fish_function_path (brew --prefix)/share/fish/vendor_functions.d
     end
+end
+
+# [TMUX] #
+if ! test -e ~/.tmux/plugins/tpm
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 end
 
 # [MACOS SETTINGS ] #
