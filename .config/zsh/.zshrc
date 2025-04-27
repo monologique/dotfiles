@@ -1,4 +1,22 @@
 # ─── ZSH  ────────────────────────────────────────────────────────────────
+
+HISTFILE=$XDG_DATA_HOME/zsh_history
+HISTSIZE=10000
+SAVEHIST="$(( $HISTSIZE + 1 ))"
+
+setopt BANG_HIST
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+unsetopt HIST_BEEP
+
 if [ -r "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
   source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
   bindkey '^[[A' history-substring-search-up
