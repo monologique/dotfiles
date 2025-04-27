@@ -76,6 +76,4 @@ end
 
 # |> Aliases
 set -Ux repos $HOME/Repositories
-alias dot="$(which git) --git-dir=$repos/dotfiles/ --work-tree=$HOME"
-
-fish_add_path --append --path $HOME/Applications/Emacs.app/Contents/MacOS/bin
+test -e (which lazygit) && alias dot="$(which lazygit) --git-dir=$repos/dotfiles/ --work-tree=$HOME"
