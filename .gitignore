@@ -26,3 +26,6 @@ Repositories/
 .viminfo
 !.ssh/config
 .config/fish/fish_variables
+.config/zsh/.zcompcache
+.config/zsh/.zcompdump
+.Trash

@@ -1,7 +1,5 @@
 cask_args appdir: "~/Applications"
 
-brew "fish"
-brew "fisher"
 brew "ffmpeg"
 brew "git"
 brew "gnupg"
